@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>वस्तुनिष्ठ प्रश्न (भूगोल) - Objective Geography MCQs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="topHeader">
+    <div class="nav-container">
+      <div class="nav-left">
+        <button id="hamburgerBtn" class="icon-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1 class="logo-text">भूगोल <span>MCQs</span></h1>
+      </div>
+
+      <!-- Quick Jump Box in Header -->
+      <div class="nav-center">
+        <div class="jump-box">
+          <input type="number" id="jumpInput" placeholder="Q. No (1-53)" min="1" max="53">
+          <button id="jumpBtn" class="action-btn">Jump</button>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark/Light Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hamburger Drawer Menu -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <div class="drawer-header">
+      <h2>नेविगेशन मेनू</h2>
+      <button id="closeDrawerBtn" class="icon-btn" aria-label="Close Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-content">
+      <div class="drawer-jump-section">
+        <label for="drawerJumpInput">प्रश्न संख्या पर जाएं:</label>
+        <div class="drawer-jump-box">
+          <input type="number" id="drawerJumpInput" placeholder="1 se 53..." min="1" max="53">
+          <button id="drawerJumpBtn" class="action-btn">Go</button>
+        </div>
+      </div>
+
+      <ul class="drawer-links">
+        <li>
+          <a href="javascript:void(0)" id="menuScrollTop">
+            <i class="fa-solid fa-arrow-up"></i> सबसे ऊपर जाएं (Top)
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)" id="menuScrollBottom">
+            <i class="fa-solid fa-arrow-down"></i> सबसे नीचे जाएं (Bottom)
+          </a>
+        </li>
+      </ul>
+
+      <div class="drawer-footer">
+        <p>कुल प्रश्न: <strong>53</strong></p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+    <div class="page-title-card">
+      <h2>वस्तुनिष्ठ प्रश्न (भूगोल)</h2>
+      <p>सामान्य अध्ययन (प्रारम्भिक) अभ्यास सेट</p>
+    </div>
+
+    <!-- Questions dynamic container (Rendered via script.js) -->
+    <div class="questions-wrapper" id="questionsContainer"></div>
+  </main>
+
+  <footer class="site-footer" id="bottomFooter">
+    <p>© भूगोल वस्तुनिष्ठ प्रश्नोत्तरी | All Rights Reserved</p>
+  </footer>
+
+  <!-- Floating Scroll-To-Top Button -->
+  <button id="floatingTopBtn" class="floating-btn" title="Go to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
