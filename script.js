@@ -7719,8 +7719,6 @@ const mcqData = [
     ],
     answer: "(घ) 1956"
   }
-];
-
 
 ];
 
