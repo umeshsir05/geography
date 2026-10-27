@@ -7837,7 +7837,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. Jump to Specific Question
   function jumpToQuestion(qNum) {
     if (!qNum || qNum < 1 || qNum >731 ) {
-      alert("कृपया 1 से 53 के बीच की संख्या दर्ज करें।");
+      alert("कृपया 1 से 731 के बीच की संख्या दर्ज करें।");
       return;
     }
     const target = document.getElementById(`q${qNum}`);
